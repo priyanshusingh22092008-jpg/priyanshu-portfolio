@@ -1,23 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Priyanshu Raj Singh | Portfolio</title>
+  <title>Priyanshu Raj Singh — Personal Portfolio</title>
+
+  <meta name="description" content="Personal portfolio of Priyanshu Raj Singh.">
 
   <style>
+    :root {
+      --bg: #090a0d;
+      --card: #111319;
+      --text: #f5f5f5;
+      --muted: #a8abb3;
+      --border: #272a33;
+      --accent: #ffffff;
+    }
+
     * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
+    }
+
+    html {
       scroll-behavior: smooth;
     }
 
     body {
       font-family: Arial, sans-serif;
-      background: #0b0b0f;
-      color: white;
+      background: var(--bg);
+      color: var(--text);
       line-height: 1.6;
     }
 
@@ -25,21 +39,92 @@
       position: sticky;
       top: 0;
       z-index: 1000;
-      background: rgba(11,11,15,0.9);
+      background: rgba(9, 10, 13, 0.92);
       backdrop-filter: blur(10px);
-      padding: 18px 8%;
+      border-bottom: 1px solid var(--border);
+      padding: 18px 7%;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 1px solid #25252d;
     }
 
-    nav h2 {
-      color: #00e5ff;
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
     }
 
     nav a {
-      color: #ddd;
+      color: var(--muted);
       text-decoration: none;
       margin-left: 20px;
-      font-size: 14
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      padding: 80px 7%;
+    }
+
+    .hero-content {
+      max-width: 800px;
+    }
+
+    .eyebrow {
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 13px;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: clamp(45px, 9vw, 90px);
+      line-height: 1;
+      margin-bottom: 25px;
+    }
+
+    h1 span {
+      color: #888;
+    }
+
+    .lead {
+      color: var(--muted);
+      font-size: 20px;
+      max-width: 650px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 22px;
+      background: white;
+      color: black;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .btn.secondary {
+      background: transparent;
+      color: white;
+      border: 1px solid var(--border);
+    }
+
+    section {
+      padding: 90px 7%;
+      border-top: 1px solid var(--border);
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 38
